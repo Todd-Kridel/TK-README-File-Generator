@@ -92,13 +92,12 @@ To use this password generator webpage...
 
 4. Navigate to and open the generated README file and add/update additional information as-needed for the progression of the new project program. Notice that the new README file is properly formatted and has an auto-linking "Table of Contents" section; and has a usage license section that automatically displays the official badge/icon of the selected license (if any).
 
-==
 Note: An enhancement component that was desired for the program but was skipped because of lack of time was an implementation/utilization of a GitHub API fetch/response promise function to auto-download the current content text of the selected usage license. For now...for all but 1 of the selectable GitHub-popular licenses...only the URL link of the license text website is provided for manual copying by the user; but the 1 most-common MIT license does have a program function that imports the text version of the license that existed at the time of the programming of this program...but that license text will have to be manually updated/refreshed in the future.
-==
+
 
 The following picture shows the appearance of an example of a generated README file:
 
-![an example picture view of the appearance of an auto-generated README file of this application](./images/Mockup.jpg.jpg)
+![an example picture view of the appearance of an auto-generated README file of this application](./images/Mockup.jpg)
 
 The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
 
