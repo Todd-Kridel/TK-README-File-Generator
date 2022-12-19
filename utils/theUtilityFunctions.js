@@ -229,19 +229,19 @@ theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "## README File Table of Contents" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[1. Project/Program Description](##1.Project/ProgramDescription)" + "\n";
+  "[1. Project/Program Description](## 1.Project/ProgramDescription)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[2. Program Installation Information](##2.-Program-Installation-Information)" + "\n";
+  "[2. Program Installation Information](# 2.ProgramInstallationInformation)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[3. Program Usage Information](##3.-Program-Usage-Information)" + "\n";
+  "[3. Program Usage Information](##3.ProgramUsageInformation)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[4. Program Credits/Contributors](##4.-Program-Credits/Contributors)" + "\n";
+  "[4. Program Credits/Contributors](## 4. Program Credits/Contributors)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[5. Program Test Information](##5.-Program-Test-Information)" + "\n";
+  "[5. Program Test Information](## 5.-Program-Test-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[6. Program Questions](##6.-Program-Questions)" + "\n";
+  "[6. Program Questions](## 6.-Program-Questions)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[7. Program License Information](##7.-Program-License-Information)" + "\n";
+  "[7. Program License Information](## 7.-Program-License-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "--------------------------------" + "\n";
@@ -253,13 +253,13 @@ theProcessedMarkdownText = theProcessedMarkdownText +
   // "theProjectDescription"
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "## 2. Program Installation Information" + "\n";
+  "## 2. ProgramInstallationInformation" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   `${theAnswerData.theProgramInstallationInstructions}` + "\n";
   // "theProgramInstallationInstructions"
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "## 3. Program Usage Information" + "\n";
+  "## 3. ProgramUsageInformation" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   `${theAnswerData.TheProgramUsageInformation}` + "\n";
   // "TheProgramUsageInformation"

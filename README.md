@@ -9,29 +9,29 @@
 
 ## README File Table of Contents
 
-[1. Project/Program Description](##1.Project/ProgramDescription)
+[1. Project/Program Description](## 1.Project/ProgramDescription)
 
-[2. Program Installation Information](##2.-Program-Installation-Information)
+[2. Program Installation Information](# 2.ProgramInstallationInformation)
 
-[3. Program Usage Information](##3.-Program-Usage-Information)
+[3. Program Usage Information](##3.ProgramUsageInformation)
 
-[4. Program Credits/Contributors](##4.-Program-Credits/Contributors)
+[4. Program Credits/Contributors](## 4. Program Credits/Contributors)
 
-[5. Program Test Information](##5.-Program-Test-Information)
+[5. Program Test Information](## 5.-Program-Test-Information)
 
-[6. Program Questions](##6.-Program-Questions)
+[6. Program Questions](## 6.-Program-Questions)
 
-[7. Program License Information](##7.-Program-License-Information)
+[7. Program License Information](## 7.-Program-License-Information)
 
 --------------------------------
 
 ## 1.Project/ProgramDescription:
 TEST
 
-## 2. Program Installation Information
+## 2. ProgramInstallationInformation
 TEST
 
-## 3. Program Usage Information
+## 3. ProgramUsageInformation
 TEST
 
 ## 4. Program Credits/Contributors
