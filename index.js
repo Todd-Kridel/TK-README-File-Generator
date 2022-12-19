@@ -4,6 +4,7 @@
 const theInquirerObject = require("inquirer");
 const theFileSystemObject = require("fs");
 const theUtilityFunctionsObject = require(".//utils/theUtilityFunctions");
+const doGenerateMarkdownText = require("./utils/theUtilityFunctions");
 const { title } = require("process");
 
 let theProcessedFileContentText = "";
@@ -81,27 +82,8 @@ function doPromptToTheUserToObtainInformation() {
     // Issue a call to the prompt function of the inquirer object to get information for the README file.
     theInquirerObject
     .prompt(theInquirerQuestions)
-    .then((answer) => {
-        theProcessedFileContentText = "\n";
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[0].message + ": " + 
-        answer.theProjectTitle + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[1].message + ": " + 
-        answer.theProjectDescription + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[2].message + ": " + 
-        answer.theProgramInstallationInstructions + "\n";  
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[3].message + ": " + 
-        answer.TheProgramUsageInformation + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[4].message + ": " + 
-        answer.theProjectContributionGuidelines + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[5].message + ": " + 
-        answer.theProgramTestInstructions + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[6].message + ": " + 
-        answer.theProgramLicense + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[7].message + ": " + 
-        answer.theProgrammerGitHubUserName + "\n"; 
-        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[8].message + ": " + 
-        answer.theProgrammerEmailAddress + "\n"; 
-        //theProcessedFileContentText = <Call to the utility function that generates the file text>;
+    .then((answers) => {
+        theProcessedFileContentText = doGenerateMarkdownText(answers);
         //
         // WRITE THE PROCESSED FILE CONTENT TEXT TO THE README FILE.
         doWriteToFile("./README.md", theProcessedFileContentText);
