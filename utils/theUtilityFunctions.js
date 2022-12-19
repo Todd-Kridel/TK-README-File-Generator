@@ -229,13 +229,13 @@ theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "## README File Table of Contents" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[1. Project/Program Description](#1.Project/ProgramDescription)" + "\n";
+  "[1. Project/Program Description](##-1.-Project/Program-Description)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[2. Program Installation Information](#2.-Program-Installation-Information)" + "\n";
+  "[2. Program Installation Information](##-2.-Program-Installation-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[3. Program Usage Information](##3.ProgramUsageInformation)" + "\n";
+  "[3. Program Usage Information](##-3.-Program-Usage-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "[4. Program Credits/Contributors](##4.-Program-Credits/Contributors)" + "\n";
+  "[4. Program Credits/Contributors](##-4.-Program-Credits/Contributors)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
   "[5. Program Test Information](##-5.-Program-Test-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
@@ -247,7 +247,7 @@ theProcessedMarkdownText = theProcessedMarkdownText +
   "--------------------------------" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "#1.Project/ProgramDescription:" + "\n";
+  "## 1. Project/Program Description:" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   `${theAnswerData.theProjectDescription}` + "\n";
   // "theProjectDescription"
