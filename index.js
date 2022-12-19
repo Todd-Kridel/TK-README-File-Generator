@@ -58,6 +58,63 @@ const theInquirerQuestions = [
     }
   ];
 
+const theAvailableLicenses = [ 
+    "No License",  // 
+    "Apache License 2.0",  // 
+    "GNU General Public License v3.0",  // 
+    "MIT License",  // 
+    "BSD 2-Clause 'Simplified' License",  // 
+    "BSD 3-Clause 'New' or 'Revised' License",  // 
+    "Boost Software License 1.0",  // 
+    "Creative Commons Zero v1.0 Universal",  // 
+    "Eclipse Public License 2.0",  // 
+    "GNU Affero General Public License v3.0",  // 
+    "GNU General Public License v2.0",  // 
+    "GNU Lesser General Public License v2.1",  // 
+    "Mozilla Public License 2.0",  // 
+    "The Unlicense"  // 
+    ];
+    // License Information: https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
+
+function doPromptToTheUserToObtainInformation() {
+    // Issue a call to the prompt function of the inquirer object to get information for the README file.
+    theInquirerObject
+    .prompt(theInquirerQuestions)
+    .then((answer) => {
+        theProcessedFileContentText = "\n";
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[0].message + ": " + 
+        answer.theProjectTitle + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[1].message + ": " + 
+        answer.theProjectDescription + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[2].message + ": " + 
+        answer.theProgramInstallationInstructions + "\n";  
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[3].message + ": " + 
+        answer.TheProgramUsageInformation + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[4].message + ": " + 
+        answer.theProjectContributionGuidelines + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[5].message + ": " + 
+        answer.theProgramTestInstructions + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[6].message + ": " + 
+        answer.theProgramLicense + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[7].message + ": " + 
+        answer.theProgrammerGitHubUserName + "\n"; 
+        theProcessedFileContentText = theProcessedFileContentText + theInquirerQuestions[8].message + ": " + 
+        answer.theProgrammerEmailAddress + "\n"; 
+        //theProcessedFileContentText = <Call to the utility function that generates the file text>;
+        //
+        // WRITE THE PROCESSED FILE CONTENT TEXT TO THE README FILE.
+        doWriteToFile("./README.md", theProcessedFileContentText);
+    })
+    .catch((error) => {
+        if (error.isTtyError) {
+            // Prompt could not be rendered in the current environment.
+        } else {
+            // Something else went wrong.
+            console.log("ERROR: Seek Online Help Immediately!!!");
+        };
+    });
+    }
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 
