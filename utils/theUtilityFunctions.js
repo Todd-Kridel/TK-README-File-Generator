@@ -63,7 +63,11 @@ function doRenderLicenseLink(license) {
     case "GNU General Public License v3.0":
       return "[!License: GPL v3]" + "(https://www.gnu.org/licenses/gpl-3.0)";
     case "MIT License":
-      return "[!License: MIT License]" + "(https://opensource.org/licenses/MIT)";
+      return "[!License: MIT License]" + "(https://opensource.org/licenses/MIT)" + 
+      "\n" + 
+      "(A COMMON OPTION FOR BEGINNER CODING PROJECTS)" + "\n" + 
+      "\n" + 
+      doShowMITLicenseText();
     case "BSD 2-Clause 'Simplified' License":
       return "[!License: BSD 2-Clause 'Simplified' License]" + 
         "(https://opensource.org/licenses/BSD-2-Clause)";
@@ -91,8 +95,67 @@ function doRenderLicenseLink(license) {
 
 // Create a function that returns the license section of the README file. If there is no license...
 // then return an empty string.
-function doRenderLicenseSection(license) {
 
+function doRenderLicenseSection(license) {
+  //console.log("doRenderLicenseSection(license) processing: " + license);
+  //
+  let theProcessedSectionText = "";
+  //
+  if (license != "No License") {
+    theProcessedSectionText = theProcessedSectionText + 
+    "(\"" + `${doRenderLicenseBadge(license)}` + "\")" + "    " + `${license}` + 
+    "\n";
+    // "theProgramLicense"
+  }
+  else {
+    theProcessedSectionText = theProcessedSectionText + `${license}` + "\n";
+    // "theProgramLicense"
+  }
+  theProcessedSectionText = theProcessedSectionText + "\n";
+  theProcessedSectionText = theProcessedSectionText + 
+    "License Text:" + "\n";
+    theProcessedSectionText = theProcessedSectionText + "\n";
+  let theLicenseTextProcessing = doRenderLicenseLink(license);
+  if (theLicenseTextProcessing != "") {
+    theProcessedSectionText = theProcessedSectionText + theLicenseTextProcessing;
+  }
+  else {
+    theProcessedSectionText = theProcessedSectionText + "None -- NA" + "\n";
+  }
+  //
+  return (theProcessedSectionText);
+  }
+  
+// Have a function that provides the text of the MIT license that is used at most often by 
+// beginner programs.
+
+function doShowMITLicenseText() {
+let theLicenseText = 
+"MIT License" + "\n" + 
+"\n" + 
+"Copyright (c) [year] [fullname]" + "\n" + 
+"" + "\n" + 
+"Permission is hereby granted, free of charge, to any person obtaining a copy" + "\n" + 
+"of this software and associated documentation files (the \"Software\"), to deal" + "\n" + 
+"in the Software without restriction, including without limitation the rights" + "\n" + 
+"to use, copy, modify, merge, publish, distribute, sublicense, and/or sell" + "\n" + 
+"copies of the Software, and to permit persons to whom the Software is" + "\n" + 
+"furnished to do so, subject to the following conditions:" + "\n" + 
+"" + "\n" + 
+"The above copyright notice and this permission notice shall be included in all" + "\n" + 
+"copies or substantial portions of the Software." + "\n" + 
+"" + "\n" + 
+"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR" + "\n" + 
+"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY," + "\n" + 
+"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE" + "\n" + 
+"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER" + "\n" + 
+"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM," + "\n" + 
+"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE" + "\n" + 
+"SOFTWARE." + "\n" + 
+"" + "\n" + 
+"For more information (and updated text), please refer to https://opensource.org/licenses/MIT." + "\n";
+//
+return (theLicenseText);
 }
 
 // Create a function that generates the markdown text of the README file.
