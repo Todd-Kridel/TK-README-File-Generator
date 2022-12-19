@@ -95,37 +95,37 @@ switch (license) {
   case "No License":
     return "";
   case "Apache License 2.0":
-    return "[!License: Apache License 2.0]" + "(https://opensource.org/licenses/Apache-2.0)";
+    return "[License: Apache License 2.0]" + "(https://opensource.org/licenses/Apache-2.0)";
   case "GNU General Public License v3.0":
-    return "[!License: GPL v3]" + "(https://www.gnu.org/licenses/gpl-3.0)";
+    return "[License: GPL v3]" + "(https://www.gnu.org/licenses/gpl-3.0)";
   case "MIT License":
-    return "[!License: MIT License]" + "(https://opensource.org/licenses/MIT)" + "\n" + 
+    return "[License: MIT License]" + "(https://opensource.org/licenses/MIT)" + "\n" + 
       "\n" + 
       "(A COMMON OPTION FOR BEGINNER CODING PROJECTS)" + "\n" + 
       "\n" + 
       doShowMITLicenseText();
   case "BSD 2-Clause 'Simplified' License":
-    return "[!License: BSD 2-Clause 'Simplified' License]" + 
+    return "[License: BSD 2-Clause 'Simplified' License]" + 
       "(https://opensource.org/licenses/BSD-2-Clause)";
   case "BSD 3-Clause 'New' or 'Revised' License":
-    return "[!License: BSD 3-Clause 'New' or 'Revised' License]" + 
+    return "[License: BSD 3-Clause 'New' or 'Revised' License]" + 
       "(https://opensource.org/licenses/BSD-3-Clause)";
   case "Boost Software License 1.0":
-    return "[!License: Boost Software License 1.0]" + "(https://www.boost.org/LICENSE_1_0.txt)";
+    return "[License: Boost Software License 1.0]" + "(https://www.boost.org/LICENSE_1_0.txt)";
   case "Creative Commons Zero v1.0 Universal":
-    return "[!License: CC0-1.0]" + "(http://creativecommons.org/publicdomain/zero/1.0/)";
+    return "[License: CC0-1.0]" + "(http://creativecommons.org/publicdomain/zero/1.0/)";
   case "Eclipse Public License 1.0":
-    return "[!License: Eclipse Public License 1.0]" + "(https://opensource.org/licenses/EPL-1.0)";
+    return "[License: Eclipse Public License 1.0]" + "(https://opensource.org/licenses/EPL-1.0)";
   case "GNU Affero General Public License v3.0":
-    return "[!License: AGPL v3]" + "(https://www.gnu.org/licenses/agpl-3.0)";
+    return "[License: AGPL v3]" + "(https://www.gnu.org/licenses/agpl-3.0)";
   case "GNU General Public License v2.0":
-    return "[!License: GPL v2]" + "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
+    return "[License: GPL v2]" + "(https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
   case "GNU Lesser General Public License v3.0":
-    return "[!License: LGPL v3]" + "(https://www.gnu.org/licenses/lgpl-3.0)";
+    return "[License: LGPL v3]" + "(https://www.gnu.org/licenses/lgpl-3.0)";
   case "Mozilla Public License 2.0":
-    return "[!License: MPL 2.0]" + "(https://opensource.org/licenses/MPL-2.0)";
+    return "[License: MPL 2.0]" + "(https://opensource.org/licenses/MPL-2.0)";
   case "The Unlicense":
-    return "[!License: Unlicense]" + "(http://unlicense.org/)";
+    return "[License: Unlicense]" + "(http://unlicense.org/)";
 } // END: "license" switch statement
 } // END: "license" filename function
 
@@ -216,7 +216,7 @@ theProcessedMarkdownText = theProcessedMarkdownText +
 
 if (theAnswerData.theProgramLicense != "No License") {
   theProcessedMarkdownText = theProcessedMarkdownText + "        " + 
-    "(\"" + `${doRenderLicenseBadge(theAnswerData.theProgramLicense)}` + "\")" + "\n";
+    "(" + `${doRenderLicenseBadge(theAnswerData.theProgramLicense)}` + ")" + "\n";
     // "theProgramLicense"
   }
   else {
@@ -229,25 +229,25 @@ theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "## README File Table of Contents" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![1. Project/Program Description]('##1. Project/Program Description')" + "\n";
+  "[1. Project/Program Description](##1.-Project/Program-Description)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![2. Program Installation Information]('##2. Program Installation Information')" + "\n";
+  "[2. Program Installation Information](##2.-Program-Installation-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![3. Program Usage Information]('##3. Program Usage Information')" + "\n";
+  "[3. Program Usage Information](##3.-Program-Usage-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![4. Program Credits/Contributors]('##4. Program Credits/Contributors')" + "\n";
+  "[4. Program Credits/Contributors](##4.-Program-Credits/Contributors)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![5. Program Test Information]('##5. Program Test Information')" + "\n";
+  "[5. Program Test Information](##5.-Program-Test-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![6. Program Questions]('##6. Program Questions')" + "\n";
+  "[6. Program Questions](##6.-Program-Questions)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
-  "![7. Program License Information]('##7. Program License Information')" + "\n";
+  "[7. Program License Information](##7.-Program-License-Information)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "--------------------------------" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "## 1. The Program Description:" + "\n";
+  "## 1. Project/Program Description:" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   `${theAnswerData.theProjectDescription}` + "\n";
   // "theProjectDescription"
@@ -279,7 +279,7 @@ theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "## 6. Program Questions" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  `Programmer Email Address: ${theAnswerData.theProgrammerEmailAddress}` + "\n";
+  `Programmer Email Address: ${theAnswerData.theProgrammerEmailAddress}` + "    " + "\n";
   // "theProgrammerEmailAddress"
 theProcessedMarkdownText = theProcessedMarkdownText + 
   `Programmer GitHub User Name: ${theAnswerData.theProgrammerGitHubUserName}` + "\n";

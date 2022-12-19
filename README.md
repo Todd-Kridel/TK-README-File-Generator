@@ -24,7 +24,7 @@
 
 --------------------------------
 
-## 1. The Program Description:
+## 1. Project/Program Description:
 TEST
 
 ## 2. Program Installation Information
@@ -40,11 +40,11 @@ TEST
 TEST
 
 ## 6. Program Questions
-Programmer Email Address: TEST
-Programmer GitHub User Name: 
+Programmer Email Address: TEST    
+Programmer GitHub User Name: TEST
 
 ## 7. Program License Information
-(./images/License_Badge__The_MIT_License.jpg)    MIT License
+("./images/License_Badge__The_MIT_License.jpg")    MIT License
 
 License Text:
 
