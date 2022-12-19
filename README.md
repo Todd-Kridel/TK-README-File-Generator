@@ -102,9 +102,11 @@ The following picture shows the appearance of an example of a generated README f
 The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
 
 WEBM VIDEO (perhaps requiring a special video player app/extension association for viewing): 
+
 ![an example webm video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.webm)
 
 GIF VIDEO: 
+
 ![an example gif video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.gif)
 
 The following URL is for the GitHub Pages published public view of Todd Kridel's Coding Bootcamp Module Challenge 9 assignment...which in this case is only a mirrored HTML version of the README.md Markdown file that was generated from the program for this assignment: "https://todd-kridel.github.io/TK-README-File-Generator". Note that the hypertext/auto links of the "Table of Contents" section do not function in the HTML version of the file; but the links do function in the Markdown viewer view of the README file that is displayed at the root/maind level of the project repository "https://github.com/Todd-Kridel/TK-README-File-Generator".
