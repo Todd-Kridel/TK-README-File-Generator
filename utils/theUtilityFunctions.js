@@ -159,25 +159,96 @@ return (theLicenseText);
 }
 
 // Create a function that generates the markdown text of the README file.
-function doGenerateMarkdown(data) {
-  let theProcessedFileContentText = "";
-  theProcessedFileContentText = theProcessedFileContentText + data.theProjectTitle + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProjectDescription + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProgramInstallationInstructions + "\n";  
-  theProcessedFileContentText = theProcessedFileContentText + data.TheProgramUsageInformation + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProjectContributionGuidelines + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProgramTestInstructions + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProgramLicense + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProgrammerGitHubUserName + "\n"; 
-  theProcessedFileContentText = theProcessedFileContentText + data.theProgrammerEmailAddress + "\n"; 
-  return theProcessedFileContentText;
-
-// # Contents
-//  - [Specification](#specification) 
-//  - [Dependencies Title](#dependencies-title) 
-// ## Specification
-// Example text blah.
-// ## Dependencies Title
-// Example text blah.
-
-}
+function doGenerateMarkdownText(theAnswerData) {
+  //console.log("doGenerateMarkdown(theAnswerData) processing");
+  //
+  let theProcessedMarkdownText = "";
+  //
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "# -- The Project README File --" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "(updated as of MM/DD/YYYYY)" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `# The Project Title: ${theAnswerData.theProjectTitle}`;
+    // "theProjectTitle"
+  
+  if (theAnswerData.theProgramLicense != "No License") {
+    theProcessedMarkdownText = theProcessedMarkdownText + "        " + 
+      "(\"" + `${doRenderLicenseBadge(theAnswerData.theProgramLicense)}` + "\")" + "\n";
+      // "theProgramLicense"
+    }
+    else {
+      theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+    }
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "--------------------------------" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## README File Table of Contents" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[1. Project/Program Description](\"##1. Project/Program Description\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[2. Program Installation Information](\"##2. Program Installation Information\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[3. Program Usage Information](\"##3. Program Usage Information\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[4. Program Credits/Contributors](\"##4. Program Credits/Contributors\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[5. Program Test Information](\"##5. Program Test Information\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[6. Program Questions](\"##6. Program Questions\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "[7. Program License Information](\"##7. Program License Information\")" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "--------------------------------" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 1. The Program Description:" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `${theAnswerData.theProjectDescription}` + "\n";
+    // "theProjectDescription"
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 2. Program Installation Information" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `${theAnswerData.theProgramInstallationInstructions}` + "\n";
+    // "theProgramInstallationInstructions"
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 3. Program Usage Information" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `${theAnswerData.TheProgramUsageInformation}` + "\n";
+    // "TheProgramUsageInformation"
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 4. Program Credits/Contributors" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `${theAnswerData.theProjectCreditsContributionInformation}` + "\n";
+    // "theProjectCreditsContributionInformation"
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 5. Program Test Information" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `${theAnswerData.theProgramTestInstructions}` + "\n";
+    // "theProgramTestInstructions" 
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    "## 6. Program Questions" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `Programmer Email Address: ${theAnswerData.theProgrammerEmailAddress}` + "\n";
+    // "theProgrammerEmailAddress"
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    `Programmer GitHub User Name: ${theAnswerData.theProgrammerGitHubUserName}` + "\n";
+    // "theProgrammerGitHubUserName"
+  theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
+    "## 7. Program License Information" + "\n";
+  theProcessedMarkdownText = theProcessedMarkdownText + 
+    doRenderLicenseSection(theAnswerData.theProgramLicense);
+  //
+  return (theProcessedMarkdownText);
+  }
+  
