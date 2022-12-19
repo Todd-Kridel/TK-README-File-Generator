@@ -1,14 +1,25 @@
 {
-  "name": "static-site",
+  "name": "tk-readme-file-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Todd-Kridel/TK-README-File-Generator.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Todd-Kridel/TK-README-File-Generator/issues"
+  },
+  "homepage": "https://github.com/Todd-Kridel/TK-README-File-Generator#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.2.4", 
+    "fs": "",
+    "theUtilityFunctions": "1.0.0"
   }
 }
