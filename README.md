@@ -51,7 +51,7 @@ License Text:
 
 [License: MIT License](https://opensource.org/licenses/MIT)
 
-(A COMMON OPTION FOR BEGINNER CODING PROJECTS)
+(A COMMON LICENSE OPTION FOR BEGINNER/BASIC PROGRAM PROJECTS)
 
 MIT License
 

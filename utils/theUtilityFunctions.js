@@ -101,7 +101,7 @@ switch (license) {
   case "MIT License":
     return "[License: MIT License]" + "(https://opensource.org/licenses/MIT)" + "\n" + 
       "\n" + 
-      "(A COMMON OPTION FOR BEGINNER CODING PROJECTS)" + "\n" + 
+      "(A COMMON LICENSE OPTION FOR BEGINNER/BASIC PROGRAM PROJECTS)" + "\n" + 
       "\n" + 
       doShowMITLicenseText();
   case "BSD 2-Clause 'Simplified' License":
