@@ -1,13 +1,13 @@
-# -- The Project README File --
+# -- The Program README File --
 (updated as of MM/DD/YYYYY)
 
 
-# The Project Title: TEST
+# Program Title: TEST
 ![a license icon](.//images/License_Badge__The_MIT_License.jpg)
 
 --------------------------------
 
-## README File Table of Contents
+## Table of Contents
 
 [1. Project/Program Description](#1-ProjectProgram-Description)
 

@@ -204,13 +204,13 @@ function doGenerateMarkdownText(theAnswerData) {
 let theProcessedMarkdownText = "";
 //
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "# -- The Project README File --" + "\n";
+  "# -- The Program README File --" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "(updated as of MM/DD/YYYYY)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  `# The Project Title: ${theAnswerData.theProjectTitle}` + "\n";
+  `# Program Title: ${theAnswerData.theProjectTitle}` + "\n";
   // "theProjectTitle"
 
 if (theAnswerData.theProgramLicense != "No License") {
@@ -226,7 +226,7 @@ theProcessedMarkdownText = theProcessedMarkdownText +
   "--------------------------------" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "## README File Table of Contents" + "\n";
+  "## Table of Contents" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
   "[1. Project/Program Description](#1-ProjectProgram-Description)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
