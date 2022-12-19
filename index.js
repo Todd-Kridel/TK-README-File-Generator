@@ -158,7 +158,7 @@ theInquirerObject
 
 function doWriteToFile(theFileName, theData) {
 console.log("SOME FILE WRITE PROCESSING OCCURRED: Created file '" + theFileName + 
-  "' and saving the inputted information '" + "\n");
+  "' and saving the inputted information.");
 theFileSystemObject.writeFile(theFileName, theData, (error) => {
   error ? console.error(error) : console.log("Successfully created the new README file!")});
 //
