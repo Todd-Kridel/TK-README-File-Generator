@@ -1,3 +1,4 @@
+
 // Include packages that are needed for the application.
 
 const theInquirerObject = require("inquirer");
@@ -115,11 +116,25 @@ function doPromptToTheUserToObtainInformation() {
     });
     }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function doWriteToFile(theFileName, theData) {
+    console.log("SOME FILE WRITE PROCESSING OCCURS: creating file '" + theFileName + 
+        "' and saving the inputted information '" + theData + "'" + "\n");
+    theFileSystemObject.writeFile(theFileName, theData, (error) => {
+        error ? console.error(error) : console.log("Successfully created the new README file!")});
+    }
+    
+// Create a function that initializes the application.
+    
+function doInitializeTheApplication() {
+    console.log("SOME PROGRAM INITIALIZATION PROCESSING OCCURS.");
+    doPromptToTheUserToObtainInformation();
+    }
 
-// TODO: Create a function to initialize app
-function init() {}
+////////////////
 
-// Function call to initialize app
-init();
+// Issue a call to the initialization function to initialize the application.
+
+doInitializeTheApplication();
+    
+////////////////
+
