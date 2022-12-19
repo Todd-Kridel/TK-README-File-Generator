@@ -204,7 +204,7 @@ function doGenerateMarkdownText(theAnswerData) {
 let theProcessedMarkdownText = "";
 //
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "# -- The Program README File --" + "\n";
+  "# ——— The Program README File ———" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "(updated as of MM/DD/YYYYY)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
