@@ -99,7 +99,7 @@ The following picture shows the appearance of an example of a generated README f
 
 ![an example picture view of the appearance of an auto-generated README file of this application](./images/Mockup.jpg)
 
-The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
+The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed to the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
 
 WEBM VIDEO (perhaps requiring a special video player app/extension association for viewing): 
 
@@ -112,16 +112,20 @@ GIF VIDEO:
 The following URL is for the GitHub Pages published public view of Todd Kridel's Coding Bootcamp Module Challenge 9 assignment...which in this case is only a mirrored HTML version of the README.md Markdown file that was generated from the program for this assignment: "https://todd-kridel.github.io/TK-README-File-Generator". Notice that the hypertext/auto links of the "Table of Contents" section of the HTML version of the file do not function because the links were programmed as Markdown-code (not HTML-code) links; but the section links *do* function in the Markdown viewer view of the README file that is displayed at the root/main level of the project repository "https://github.com/Todd-Kridel/TK-README-File-Generator".
 
 ## 4. Program Credits/Contributors
-Special credit callout to the Contributors of the starter code of this assignment; by way of the starter code bootcamp-related repository "git@github.com:coding-boot-camp/potential-enigma.git": user @Xandromus (Xandromus Xander Rapstine) and user @gachoi06 (gachoi06 Grace Choi).
+
+a special credit callout to the Contributors of the starter code of this assignment; by way of the starter code bootcamp-related repository "git@github.com:coding-boot-camp/potential-enigma.git": user @Xandromus (Xandromus Xander Rapstine) and user @gachoi06 (gachoi06 Grace Choi).
 
 ## 5. Program Test Information
+
 NONE
 
 ## 6. Program Questions
+
 Programmer Email Address: <todd.kridel@gmail.com>   
 Programmer GitHub User Name: github.com/Todd-Kridel
 
 ## 7. Program License Information
+
 ![a license icon](.//images/License_Badge__The_MIT_License.jpg)
 
 License Text:
