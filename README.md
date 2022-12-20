@@ -98,13 +98,21 @@ To use this README file generator program...
 The prompt process asks the following questions about the README file content:
 
   A. "What is the project/document title?". 
+
   B. "What is the starting description text that is for the new program?". 
+
   C. "What special installation instructions, if any, apply to the project program?". 
+
   D. "What special usage information applies to the project program?". 
+
   E. "What credits/contributions details, if any, apply to the project program?". 
+
   F. "What special test instructions, if any, apply to the project program?". 
+
   G. "What license is applicable to the project program?". 
+
   H. "What is the programmer's GitHub user name?". 
+  
   I. "What is the programmer's email address?". 
 
 The program process then inserts the question answers into the corresponding sections of the starting README file.
