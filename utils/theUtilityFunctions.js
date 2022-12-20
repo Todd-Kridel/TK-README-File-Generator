@@ -1,10 +1,5 @@
 
 
-// exported module code
-
-module.exports = doGenerateMarkdownText;
-
-
 // Create a function that returns a license badge based on which license is passed in. If there is 
 // no license...then return an empty string.
 
@@ -290,6 +285,11 @@ theProcessedMarkdownText = theProcessedMarkdownText +
 //
 return (theProcessedMarkdownText);
 }
+
+
+// exported module code
+
+module.exports = doGenerateMarkdownText;
 
 
 // POSSIBLE GITHUB API CODE FOR DYNAMICALLY LOADING CURRENT LICENSE TEXT
