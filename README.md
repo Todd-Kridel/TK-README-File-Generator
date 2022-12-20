@@ -2,7 +2,7 @@
 (updated as of 12/19/2022)
 
 
-# Program Title: Bootcamp Module 9 Challenge Assignment -- a README File Generator Program per prompting to the user
+# Program Title: Bootcamp Module 9 Challenge Assignment -- the "TK README File Generator Program" -- an interactive command-line module-interfaced utility program
 ![a license icon](.//images/License_Badge__The_MIT_License.jpg)
 
 --------------------------------
