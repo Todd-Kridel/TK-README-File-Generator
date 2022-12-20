@@ -87,7 +87,7 @@ The required supporting utility module files have to be pre-installed to a "node
 
 ## 3. Program Usage Information
 
-To use this password generator webpage...
+To use this README file generator program...
 
 1. Clone the program repository if desired -- "git clone git@github.com:Todd-Kridel/TK-README-File-Generator.git" -- to a desired local-computer working directory.
 
