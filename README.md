@@ -71,12 +71,17 @@ Make sure that you have a GitHub membership and account to be able to view the r
 
 Have the "node.js" system software installed and have for this program directory a "package.json" file that indicates the required dependencies of the README file generator program:
 
- "dependencies": {
-    "inquirer": "^8.2.4", // Refer to the "inquirer" website.
-    "fs": "", // current version; Refer to the "fs" File System modules website.
-    "theUtilityFunctions": "1.0.0"
-      // a utility JavaScript file that is was programmed with this program and is included in the contained "util" sub-directory
-  }
+"dependencies":
+
+{
+
+"inquirer": "^8.2.4", // Refer to the "inquirer" website.
+
+"fs": "", // current version; Refer to the "fs" File System modules website.
+
+"theUtilityFunctions": "1.0.0" // a utility JavaScript file that is was programmed with this program and is included in the contained "util" sub-directory
+
+}
 
 The required supporting utility module files have to be pre-installed to a "node_modules" sub-directory folder of the project directory folder. Refer to the appropriate system company websites and their support documentation.
 
@@ -90,6 +95,20 @@ To use this password generator webpage...
 
 3. Respond to the README file content question prompts to provide the information that is necessary to compose the contents of the starting version of the needed new README file. At the end of the prompt session...and assuming that no processing errors occurred...the new README file is created in the current working directory.
 
+The prompt process asks the following questions about the README file content:
+
+A. "What is the project/document title?"
+B. "What is the starting description text that is for the new program?"
+C. "What special installation instructions, if any, apply to the project program?"
+D. "What special usage information applies to the project program?"
+E. "What credits/contributions details, if any, apply to the project program?"
+F. "What special test instructions, if any, apply to the project program?"
+G. "What license is applicable to the project program?", 
+H. "What is the programmer's GitHub user name?"
+I. "What is the programmer's email address?"
+
+The program process then inserts the question answers into the corresponding sections of the starting README file.
+
 4. Navigate to and open the generated README file and add/update additional information as-needed for the progression of the new project program. Notice that the new README file is properly formatted and has an auto-linking "Table of Contents" section; and has a usage license section that automatically displays the official badge/icon of the selected license (if any).
 
 Note: An enhancement component that was desired for the program but was skipped because of lack of time was an implementation/utilization of a GitHub API fetch/response promise function to auto-download the current content text of the selected usage license. For now...for all but 1 of the selectable GitHub-popular licenses...only the URL link of the license text website is provided for manual copying by the user; but the 1 most-common MIT license does have a program function that imports the text version of the license that existed at the time of the programming of this program...but that license text will have to be manually updated/refreshed in the future.
@@ -102,7 +121,7 @@ The following picture shows the appearance of an example of a generated README f
 The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed to the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
 
 WEBM VIDEO (perhaps requiring a special video player app/extension association for viewing): 
-
+(Click the video icon to download the better-quality video so it can be viewed on your computer.)
 ![an example webm video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.webm)
 
 GIF VIDEO: 
