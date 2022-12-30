@@ -18,8 +18,6 @@
   },
   "homepage": "https://github.com/Todd-Kridel/TK-README-File-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4", 
-    "fs": "",
-    "theUtilityFunctions": "1.0.0"
+    "inquirer": "^8.2.4"
   }
 }
