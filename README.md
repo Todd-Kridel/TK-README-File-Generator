@@ -137,6 +137,8 @@ UPDATE:
 
   Google Drive: lower resolution: https://drive.google.com/file/d/1GJg3wBFyPUIgpoZ2sqFOT4W_oNFByjup/view
 
+![a detailed example mp4 video view of the program usage to auto-generate a README file with this application.](./images/Challenge_9_demo_video.mp4)
+
 =====================================================
 
 > ### GIF VIDEO:  ( ** ONLY FOR AN APPEARANCE HINT ** )
