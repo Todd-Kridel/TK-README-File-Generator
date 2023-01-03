@@ -129,11 +129,13 @@ Note: The URL of that screen is "https://github.com/Todd-Kridel/TK-README-File-G
 
 =====================================================
 
-> ### GIF VIDEO: ( **ONLY FOR AN APPEARANCE HINT** )
+> ### GIF VIDEO: ( ** ONLY FOR AN APPEARANCE HINT ** )
 
 ( USE THE WEBM VIDEO LINK THAT IS AT ABOVE FOR A DETAILED VIEW OF THE APPLICATION. )
 
 ![an example gif video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.gif)
+
+(https://github.com/Todd-Kridel/TK-README-File-Generator/blob/main/images/TK-README-File-Generator-Demo-Video.gif)
 
 > ### GitHub Published Page View
 
