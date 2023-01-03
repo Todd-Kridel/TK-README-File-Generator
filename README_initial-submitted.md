@@ -1,9 +1,9 @@
 # ——— The Program README File ———
-(updated as of 1/2/2023)
+(updated as of 12/19/2022)
 
 
 # Program Title: Bootcamp Module 9 Challenge Assignment -- the "TK README File Generator Program" -- an interactive command-line module-interfaced utility program
-![a license icon](./images/License_Badge__The_MIT_License.jpg)
+![a license icon](.//images/License_Badge__The_MIT_License.jpg)
 
 --------------------------------
 
@@ -118,18 +118,13 @@ The following picture shows the appearance of an example of a generated README f
 
 ![an example picture view of the appearance of an auto-generated README file of this application](./images/Mockup.jpg)
 
-The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file. The GIF video gives a simpler-view impression of the application. For extra visual detail for actual learning process information and being able to read screen text...then download the WEBM video that has higher resolution. And then...at after running the program...the generated README file can be updated in a text editor program and then uploaded/pushed to the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
+The following files are "webm"-format video (higher resolution) and a "gif"-format video (lower resolution) that show a short demonstration of the usage of the program to generate a starting README file; and then the generated file can be updated in a text editor program and then uploaded/pushed to the a GitHub repository. The README file that now is in the project repository (URL at below) is the updated added-to version of the original auto-generated file. Only additional explanation/detail text was added to the file; there was not any new formatting/styling that was implemented.
 
-* WEBM VIDEO:
- (perhaps requiring a special video player app/extension association for viewing) 
-
-Click the "...webm video view..." video description text (that should be underlined)  to access an "images" sub-folder screen that contains a "Download" button that can be used to download the better-quality video so it can be viewed on your computer.
-
+WEBM VIDEO (perhaps requiring a special video player app/extension association for viewing): 
+(Click the video icon to download the better-quality video so it can be viewed on your computer.)
 ![an example webm video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.webm)
 
-Note: The URL of that screen is "https://github.com/Todd-Kridel/TK-README-File-Generator/blob/main/images/TK-README-File-Generator-Demo-Video.webm" and this link can be used if the other link does not work.
-
-* GIF VIDEO: 
+GIF VIDEO: 
 
 ![an example gif video view of the program usage to auto-generate a README file with this application](./images/TK-README-File-Generator-Demo-Video.gif)
 
@@ -146,11 +141,11 @@ NONE
 ## 6. Program Questions
 
 Programmer Email Address: <todd.kridel@gmail.com>   
-Programmer GitHub User Name: https://github.com/Todd-Kridel
+Programmer GitHub User Name: github.com/Todd-Kridel
 
 ## 7. Program License Information
 
-![a license icon](./images/License_Badge__The_MIT_License.jpg)
+![a license icon](.//images/License_Badge__The_MIT_License.jpg)
 
 License Text:
 

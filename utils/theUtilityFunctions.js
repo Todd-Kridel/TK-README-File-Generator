@@ -13,31 +13,31 @@ switch (license) {
   case "No License":
     return "";
   case "Apache License 2.0":
-    return "![a license icon](.//images/License_Badge__Apache_2_0.jpg)";
+    return "![a license icon](./images/License_Badge__Apache_2_0.jpg)";
   case "GNU General Public License v3.0":
-    return "![a license icon](.//images/License_Badge__GNU_GPL _v3.jpg)";
+    return "![a license icon](./images/License_Badge__GNU_GPL _v3.jpg)";
   case "MIT License":
-    return "![a license icon](.//images/License_Badge__The_MIT_License.jpg)";
+    return "![a license icon](./images/License_Badge__The_MIT_License.jpg)";
   case "BSD 2-Clause 'Simplified' License":
-    return "![a license icon](.//images/license_Badge__BSD_2-Clause_License.jpg)";
+    return "![a license icon](./images/license_Badge__BSD_2-Clause_License.jpg)";
   case "BSD 3-Clause 'New' or 'Revised' License":
-    return "![a license icon](.//images/License_Badge__BSD_3-Clause_License.jpg)";
+    return "![a license icon](./images/License_Badge__BSD_3-Clause_License.jpg)";
   case "Boost Software License 1.0":
-    return "![a license icon](.//images/License_Badge__Boost_Software_License_1_0.jpg)";
+    return "![a license icon](./images/License_Badge__Boost_Software_License_1_0.jpg)";
   case "Creative Commons Zero v1.0 Universal":
-    return "![a license icon](.//images/License_Badge__Creative_Commons_1_0.jpg)";
+    return "![a license icon](./images/License_Badge__Creative_Commons_1_0.jpg)";
   case "Eclipse Public License 1.0":
-    return "![a license icon](.//images/License_Badge__Eclipse_Public_License_1_0.jpg)";
+    return "![a license icon](./images/License_Badge__Eclipse_Public_License_1_0.jpg)";
   case "GNU Affero General Public License v3.0":
-    return "![a license icon](.//images/License_Badge__GNU_AGPL_v3.jpg)";
+    return "![a license icon](./images/License_Badge__GNU_AGPL_v3.jpg)";
   case "GNU General Public License v2.0":
-    return "![a license icon](.//images/License_Badge__GNU_GPL_v2.jpg)";
+    return "![a license icon](./images/License_Badge__GNU_GPL_v2.jpg)";
   case "GNU Lesser General Public License v3.0":
-    return "![a license icon](.//images/License_Badge__GNU_LGPL_v3.jpg)";
+    return "![a license icon](./images/License_Badge__GNU_LGPL_v3.jpg)";
   case "Mozilla Public License 2.0":
-    return "![a license icon](.//images/License_Badge__Mozilla_Public_License_2_0.jpg)";
+    return "![a license icon](./images/License_Badge__Mozilla_Public_License_2_0.jpg)";
   case "The Unlicense":
-    return "![a license icon](.//images/License_Badge__The_Unlicense.jpg)";
+    return "![a license icon](./images/License_Badge__The_Unlicense.jpg)";
   //
 }  // END: "license" switch statement
 //
@@ -201,7 +201,7 @@ let theProcessedMarkdownText = "";
 theProcessedMarkdownText = theProcessedMarkdownText + 
   "# ——— The Program README File ———" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  "(updated as of MM/DD/YYYYY)" + "\n";
+  "(updated as of MM/DD/YYYY)" + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + "\n";
 theProcessedMarkdownText = theProcessedMarkdownText + 
@@ -276,7 +276,7 @@ theProcessedMarkdownText = theProcessedMarkdownText +
   `Programmer Email Address: ${theAnswerData.theProgrammerEmailAddress}` + "    " + "\n";
   // "theProgrammerEmailAddress"
 theProcessedMarkdownText = theProcessedMarkdownText + 
-  `Programmer GitHub User Name: ${theAnswerData.theProgrammerGitHubUserName}` + "\n";
+  `Programmer GitHub User Name: https://github.com/${theAnswerData.theProgrammerGitHubUserName}` + "\n";
   // "theProgrammerGitHubUserName"
 theProcessedMarkdownText = theProcessedMarkdownText + "\n" + 
   "## 7. Program License Information" + "\n";
