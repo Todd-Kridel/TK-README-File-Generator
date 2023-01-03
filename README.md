@@ -77,19 +77,15 @@ Have the "node.js" system software installed and have for this program directory
 
 "inquirer": "^8.2.4", // Refer to the "inquirer" website.
 
-"fs": "", // current version; Refer to the "fs" File System modules website.
-
-"theUtilityFunctions": "1.0.0" // a utility JavaScript file that is was programmed with this program and is included in the contained "util" sub-directory
-
 }
 
-The required supporting utility module files have to be pre-installed to a "node_modules" sub-directory folder of the project directory folder. Refer to the appropriate system company websites and their support documentation.
+The required supporting npm utility module files have to be pre-installed to a "node_modules" sub-directory folder of the project directory folder...at after when the repository is cloned to a new directory on the involved user local computer; and also at after when current node.js system software and npm (node package manager) system software has been installed on the local computer. The pre-installation of the supporting module files should at then be able to be auto-triggered by using a console window to navigate to the clone directory and then type the command "npm i" in a console window of the clone directory. Refer to the appropriate system company websites and their support documentation for additional information.
 
 ## 3. Program Usage Information
 
 To use this README file generator program...
 
-1. Clone the program repository if desired -- "git clone git@github.com:Todd-Kridel/TK-README-File-Generator.git" -- to a desired local-computer working directory.
+1. Clone the program repository if desired -- "git clone git@github.com:Todd-Kridel/TK-README-File-Generator.git" -- to a desired local-computer working directory. Also refer to the important supporting/supplemental software information that is at above in the "Program Installation Information" section.
 
 2. In a command prompt terminal window of the project clone/download directory...enter the command "node index".
 
