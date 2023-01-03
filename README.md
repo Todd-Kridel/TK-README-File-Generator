@@ -127,9 +127,9 @@ Click the "...webm video view..." video description text (that should be underli
 
 Note: The URL of that screen is "https://github.com/Todd-Kridel/TK-README-File-Generator/blob/main/images/TK-README-File-Generator-Demo-Video.webm" and this link can be used if the other link does not work.
 
-UPDATE: BECAUSE I HAD TIME TIME RECORDING MY NEW DEMO VIDEO THAT IS FOR CHALLENGE 10:
+UPDATE:
 
-> #### MP4 VIDEO POST ON SCREENCASTIFY.COM AND ON GOOGLE-DRIVE: 
+> #### MP4 VIDEO POSTS ON SCREENCASTIFY.COM AND ON GOOGLE-DRIVE: 
 
   (HOPEFULLY PUBLICALLY-AVAILABLE)
 
