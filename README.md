@@ -121,7 +121,7 @@ The following files are "webm"-format video (higher resolution) and a "gif"-form
 > ### WEBM VIDEO:  ( ** FOR A DETAILED APPEARANCE VIEW ** )
  (perhaps requiring a special video player app/extension association for viewing) 
 
-Click the "...webm video view..." video description text (that should be underlined to access an "images" sub-folder screen that contains a "Download" button (to the right of some "33.6 MB" file size text) that can be used to download the better-quality video so it can be viewed on your computer. If the video cannot be downloaded...then use the easy procedure information that is described in the "[3. Program Usage Information](#3-Program-Usage-Information)" section.
+Click the "...webm video view..." video description text (that should be underlined) to access an "images" sub-folder screen that contains a "Download" button (to the right of some "33.6 MB" file size text) that can be used to download the better-quality video so it can be viewed on your computer. If the video cannot be downloaded...then use the easy procedure information that is described in the "[3. Program Usage Information](#3-Program-Usage-Information)" section.
 
 ![Click this link to download a detailed example webm video view of the program usage to auto-generate a README file with this application.](./images/TK-README-File-Generator-Demo-Video.webm)
 
